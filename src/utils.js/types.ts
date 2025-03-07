@@ -17,5 +17,5 @@ export type InvestmentItem = InvestmentParams & {
 };
 
 export type InvestmentState = {
-  items: InvestmentItem[];
+  item: InvestmentItem | null;
 };

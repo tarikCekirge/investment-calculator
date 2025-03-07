@@ -7,7 +7,7 @@ import {
 import { calculateInvestmentResults } from "../utils.js/investment";
 
 const initialState: InvestmentState = {
-  items: [],
+  item: null, // Başlangıçta item null
 };
 
 export const calculateSlice = createSlice({
@@ -18,13 +18,13 @@ export const calculateSlice = createSlice({
       const result: InvestmentResult[] = calculateInvestmentResults(
         action.payload
       );
-      state.items.push({
-        ...action.payload,
-        results: result,
-      });
+      state.item = { ...action.payload, results: result };
+    },
+    resetInvestment: (state) => {
+      state.item = null;
     },
   },
 });
 
-export const { calculateInvestment } = calculateSlice.actions;
+export const { calculateInvestment, resetInvestment } = calculateSlice.actions;
 export default calculateSlice.reducer;

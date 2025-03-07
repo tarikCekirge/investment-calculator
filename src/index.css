@@ -14,6 +14,28 @@ body {
   @apply min-h-screen;
 }
 
-input {
-  @apply border;
+.investment-form {
+  @apply bg-[#f6fbff]  p-9 space-y-4 rounded-lg mb-6;
+}
+
+.investment-form label {
+  @apply text-[#003A72] font-black;
+}
+
+.investment-form input {
+  @apply border p-2 rounded-lg border-[#B1B6BE] ring-0 outline-0;
+}
+
+.investment-form button[type="submit"] {
+  @apply border-0 px-6 py-3 bg-[#003A72] rounded-lg text-white font-black cursor-pointer;
+}
+.investment-form button[type="button"] {
+  @apply border-0 px-6 py-3 bg-none rounded-lg text-[#003A72] font-black cursor-pointer;
+}
+
+table thead td {
+  @apply pb-4;
+}
+table tbody td {
+  @apply border-t border-t-gray-200 py-3;
 }
