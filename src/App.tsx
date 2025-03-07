@@ -1,12 +1,12 @@
 import { useRef } from 'react';
 import './App.css'
-import Form, { FormHandle } from './Components/Form'
-import Header from './Components/Header'
-import Input from './Components/Input'
+import Form, { FormHandle } from './components/Form'
+import Header from './components/Header'
+import Input from './components/Input'
 import { useCalculateDispacth } from './store/hooks';
 import { calculateInvestment, resetInvestment } from './store/calculate-slice';
 import { InvestmentParams } from './utils.js/types';
-import Results from './Components/Results';
+import Results from './components/Results';
 
 function App() {
   const dispatch = useCalculateDispacth()
