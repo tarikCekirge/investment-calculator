@@ -1,11 +1,11 @@
 import { useRef } from 'react';
 import './App.css'
-import Form, { FormHandle } from './components/Form'
-import Header from './components/Header'
-import Input from './components/Input'
 import { useCalculateDispacth } from './store/hooks';
 import { calculateInvestment, resetInvestment } from './store/calculate-slice';
 import { InvestmentParams } from './utils.js/types';
+import Form, { FormHandle } from './components/Form';
+import Header from './components/Header';
+import Input from './components/Input';
 import Results from './components/Results';
 
 function App() {
